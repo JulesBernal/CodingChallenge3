@@ -9,7 +9,7 @@ function arrayChecker(arrayType){
     let userInput;
 if ("boolean"===typeof arrayType[0]){
     userInput=prompt(`The Array you choose is ${choice}, add a boolean value.`);
-        arrayPush(boolData,userInput)
+        arrayPush(boolData,true);
 }
 else if ("number"===typeof arrayType[0]){
   userInput=Number(prompt(`The Array you choose is ${choice}, add a year value. Eg. 2050`));
@@ -21,12 +21,12 @@ else if ("string"===typeof arrayType[0]){
 }
 }
 
-const choice=prompt(`Which Array do you want to interact with, number, boolean, or strings?`)
+const choice=prompt(`Which Array do you want to interact with, number, boolean, or string?`)
 if (choice==='boolean'){
     arrayChecker(boolData);
     console.log(boolData);
 }
-else if (choice===`strings`){
+else if (choice===`string`){
 
     arrayChecker(cityArray);
     console.log(cityArray);
