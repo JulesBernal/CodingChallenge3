@@ -17,21 +17,19 @@ else if ("number"===typeof arrayType[0]){
 }
 else if ("string"===typeof arrayType[0]){
     userInput=prompt(`The Array you choose is ${choice}, add a city as a string, E.g. 'houston`);
-        arrayPush(cityArray,'Chicago');
+        arrayPush(cityArray,userInput);
 }
 }
 
 const choice=prompt(`Which Array do you want to interact with, number, boolean, or strings?`)
 if (choice==='boolean'){
     arrayChecker(boolData);
-
-console.log(boolData);
+    console.log(boolData);
 }
 else if (choice===`strings`){
 
     arrayChecker(cityArray);
-
-console.log(cityArray);
+    console.log(cityArray);
 }
 else if (choice===`number`){
     arrayChecker(years);
